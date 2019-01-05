@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.online_examination_system.bean.QuestionBankSelectBean" table="question_bank_select">
+		<id name="id" column="id" type="int">
+			<generator class="increment"></generator>
+		</id>
+		<property name="question" column="question" type="text"></property>
+		<property name="answer" column="answer" type="int"></property>
+		<property name="teachername" column="teachername" type="string"></property>
+		<property name="courseid" column="courseid" type="int"></property>
+	</class>
+</hibernate-mapping>
